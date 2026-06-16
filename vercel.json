@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/respostas", "destination": "/api/respostas" },
+    { "source": "/obrigado", "destination": "/api/obrigado" },
+    { "source": "/relatorio", "destination": "/api/relatorio" },
+    { "source": "/respostas.json", "destination": "/api/respostas-json" }
+  ]
+}

@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portal de Atendimento ao Aluno - Inacessível</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="brand">
+        <span class="brand-mark">A</span>
+        <span>Portal Aula Acessível</span>
+      </div>
+
+      <div class="menu">
+        <span class="fake-link">Serviços</span>
+        <span class="fake-link">Prazos</span>
+        <span class="fake-link">Atendimento</span>
+      </div>
+    </div>
+
+    <div class="site-shell">
+      <div class="simulation-layer">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow">Ambiente de demonstração</div>
+            <div class="title">
+              <span class="title-line">Portal de Atendimento</span>
+              <span class="title-line">ao Aluno</span>
+            </div>
+            <p>
+              Consulte serviços acadêmicos, acompanhe prazos e envie uma solicitação para a equipe de atendimento.
+            </p>
+            <div class="primary-action">Solicitar atendimento</div>
+          </div>
+
+          <div class="figure">
+            <img src="assets/aula-acessibilidade.png">
+            <div class="figcaption">Atividade prática em sala de aula.</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-heading">
+            <div class="eyebrow">Serviços</div>
+            <div class="subtitle">O que o aluno pode solicitar</div>
+          </div>
+
+          <div class="cards">
+            <div class="card">
+              <div class="card-title">Agendamento</div>
+              <p>Marque um horário para atendimento presencial ou remoto com a secretaria acadêmica.</p>
+              <span class="fake-link">Abrir agendamento</span>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Documentos</div>
+              <p>Solicite declaração de matrícula, histórico parcial ou comprovante de frequência.</p>
+              <span class="fake-link">Solicitar documento</span>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Suporte</div>
+              <p>Informe problemas de acesso ao ambiente virtual, notas, disciplinas ou cadastro.</p>
+              <span class="fake-link">Pedir suporte</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-heading">
+            <div class="eyebrow">Prazos</div>
+            <div class="subtitle">Tempo estimado de resposta</div>
+          </div>
+
+          <div class="fake-table">
+            <div class="fake-caption">Tempo estimado para cada tipo de atendimento acadêmico</div>
+            <div class="fake-row fake-head">
+              <div>Serviço</div>
+              <div>Prioridade</div>
+              <div>Resposta</div>
+            </div>
+            <div class="fake-row">
+              <div>Agendamento</div>
+              <div>Normal</div>
+              <div>1 dia útil</div>
+            </div>
+            <div class="fake-row">
+              <div>Documentos</div>
+              <div>Normal</div>
+              <div>3 dias úteis</div>
+            </div>
+            <div class="fake-row">
+              <div>Suporte de acesso</div>
+              <div>Alta</div>
+              <div>Até 8 horas úteis</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-heading">
+            <div class="eyebrow">Atendimento</div>
+            <div class="subtitle">Enviar solicitação</div>
+          </div>
+
+          <form action="/respostas" method="post" id="formulario-estudante">
+            <p class="required-note">Campos obrigatórios são marcados com *.</p>
+
+            <div class="field">
+              <input id="campo" name="nome" type="text" placeholder="Nome completo *">
+            </div>
+
+            <div class="field">
+              <input id="campo" name="email" type="email" placeholder="E-mail *">
+              <p class="hint">Use um e-mail que você acessa com frequência.</p>
+            </div>
+
+            <div class="fieldset">
+              <div class="legend">Tipo de atendimento *</div>
+
+              <span class="choice">
+                <input id="campo" type="radio" name="tipo" value="matricula">
+                Matrícula
+              </span>
+
+              <span class="choice">
+                <input type="radio" name="tipo" value="documentos">
+                Documentos
+              </span>
+
+              <span class="choice">
+                <input type="radio" name="tipo" value="suporte">
+                Suporte de acesso
+              </span>
+            </div>
+
+            <div class="field">
+              <textarea name="mensagem" rows="5" placeholder="Mensagem"></textarea>
+            </div>
+
+            <div class="button" onclick="document.getElementById('formulario-estudante').submit()">Enviar solicitação</div>
+          </form>
+        </div>
+
+        <div class="notice">
+          <div class="subtitle">Aviso importante</div>
+          <p>Atendimentos com prazo vencido devem ser informados pelo canal de suporte acadêmico.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 Portal Aula Acessível. Material didático para comparação de acessibilidade.</p>
+    </div>
+  </body>
+</html>
